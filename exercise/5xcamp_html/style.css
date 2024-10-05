@@ -1,0 +1,1067 @@
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  tab-size: 4;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+i {
+  font-size: 18px;
+  color: gray;
+  padding: 0 10px;
+  vertical-align: middle;
+}
+
+body {
+  background-color: rgb(212, 215, 220);
+}
+
+button:hover,
+button::after {
+  color: #ffffff;
+  background: #ea3434;
+  display: block;
+}
+
+.full-content {
+  width: 100%;
+  background-color: #fff;
+}
+
+.content {
+  width: 1200px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: auto;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.show-on:hover > .nav-drop {
+  opacity: 1;
+  z-index: 1;
+}
+
+.close {
+  /* display: none; */
+  opacity: 0;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+}
+
+.bg-pink {
+  background-color: rgb(229, 31, 88);
+}
+
+/* ------------nav------------ */
+
+.anchor {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-content {
+  width: 100vw;
+  height: 60px;
+  align-items: center;
+}
+
+.logo {
+  width: 160px;
+  height: 38px;
+  vertical-align: middle;
+  left: 10px;
+}
+.nav-list-box {
+  width: 60%;
+  text-wrap: nowrap;
+}
+.nav-list {
+  color: gray;
+  width: 100%;
+  text-decoration: none;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.nav-drop {
+  background: white;
+  width: 80px;
+  position: absolute;
+  top: 35px;
+  list-style: none;
+  line-height: 2em;
+  box-shadow: 1px 2px 2px rgb(77, 77, 77);
+  opacity: 0;
+}
+
+.user {
+  width: 40px;
+  vertical-align: middle;
+}
+
+.user-drop {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.nav-drop * {
+  font-size: 16px;
+  color: gray;
+}
+
+.fa-user-astronaut {
+  color: black;
+  background: gray;
+  font-size: 28px;
+  padding: 5px;
+  margin: 0 10px;
+  border: 2px double gray;
+  border-radius: 50%;
+}
+
+.nav-box-sm {
+  display: none;
+}
+
+/* ------------輪播------------ */
+
+.carousel {
+  background-image: url("https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQyNCwicHVyIjoiYmxvYl9pZCJ9fQ==--b6da94591c1fcd732743e53012c5380d8d0e5b7d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/Astro%201440x706.webp");
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  height: 420px;
+  top: -45px;
+  transform: scale(1.2);
+  opacity: 0.2;
+}
+.carousel-1 {
+  display: block;
+  position: absolute;
+  background-image: url("https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM1MSwicHVyIjoiYmxvYl9pZCJ9fQ==--da934f3e561063514163167f8ee0ce4c9f886bf7/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/Moku%201440x706.webp");
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  height: 420px;
+  /* transform: scale(1.2); */
+  display: none;
+  top: -360px;
+  opacity: 0.2;
+}
+
+.carousel-2 {
+  position: absolute;
+  background-image: url("https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM1NywicHVyIjoiYmxvYl9pZCJ9fQ==--fb24f0f171d678d3a565af06bddef364e39572e9/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/Banner%20v2%20PC.webp");
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  height: 420px;
+  /* transform: scale(1.2); */
+  display: none;
+  top: -360px;
+  opacity: 0.2;
+}
+
+/* .picture,
+.picture-1,
+.picture-2 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 720px;
+  height: 420px;
+} */
+
+.picture {
+  /* display: none; */
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 720px;
+  height: 420px;
+}
+
+.picture-1 {
+  display: none;
+  /* display: flex; */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -380px;
+  width: 720px;
+  height: 420px;
+}
+
+.picture-2 {
+  display: none;
+  /* display: flex; */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -380px;
+  width: 720px;
+  height: 420px;
+}
+
+.carousel-list {
+  position: relative;
+  flex-wrap: nowrap;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  height: 100%;
+  top: 20px;
+  z-index: 1;
+}
+
+button {
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  border: 0;
+}
+
+/* ------------線上課程------------ */
+
+.online-group {
+  width: 1200px;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.courses-title {
+  width: 100%;
+}
+
+.courses-title p {
+  color: black;
+  position: relative;
+  width: 100%;
+  height: 45px;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.courses-title p::after {
+  content: "";
+  background: red;
+  width: 60px;
+  height: 4px;
+  line-height: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 15%;
+  position: relative;
+  top: 20px;
+}
+
+.courses-tag {
+  width: 100%;
+}
+
+.courses-tag-name {
+  width: 64px;
+  height: 24px;
+  position: relative;
+  top: -11px;
+  left: -2%;
+  font-weight: 400;
+  text-align: center;
+  line-height: normal;
+  background-color: black;
+  color: white;
+  margin-right: auto;
+  padding: 5px;
+  z-index: 1;
+}
+
+.triangle {
+  width: 8px;
+  height: 10px;
+  position: relative;
+  left: -73%;
+  top: 23px;
+  background-color: black;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  z-index: 1;
+}
+
+.course-num {
+  background: rgb(82, 82, 91);
+  color: white;
+  width: 52px;
+  height: 20px;
+  padding: 4px 10px 4px 20px;
+  text-align: center;
+  line-height: normal;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+  z-index: 1;
+}
+
+.courses-card {
+  background-color: white;
+  position: relative;
+  flex-wrap: wrap;
+  max-width: 310px;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 3px 5px 5px 2px gray;
+}
+
+.courses-picture {
+  width: 100%;
+  position: relative;
+  top: -34px;
+}
+
+.avatar {
+  position: relative;
+  top: -70px;
+  left: -110px;
+  font-size: 18px;
+  width: 62px;
+  height: 62px;
+  box-shadow: 2px 5px 10px 1px gray;
+  border-radius: 50%;
+  margin-bottom: -30%;
+}
+
+.avatar + span {
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  width: 200;
+  color: gray;
+  position: relative;
+  top: -35px;
+  left: -30%;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 28px;
+  color: black;
+  border-left: 3px solid red;
+  padding: 0 0 10px 10px;
+  margin: -20px 0 10px 0;
+}
+
+p {
+  line-height: 32px;
+  color: gray;
+}
+
+.subtitle {
+  color: rgb(189, 189, 189);
+  font-size: 16px;
+  font-weight: 700;
+  top: 5px;
+}
+
+.price {
+  font-size: 18px;
+  color: #ea3434;
+  font-weight: 700;
+}
+
+/* ------------實體課程------------ */
+
+.entity-group {
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: flex-start;
+  position: relative;
+  top: 120px;
+  left: 50%;
+  transform: translate(-46%);
+}
+
+.courses-entity p {
+  top: 180px;
+  margin-bottom: 120px;
+}
+
+.fine-tuning {
+  top: -65px;
+  left: -50px;
+}
+
+.fine-tuning-name {
+  transform: translate(40%);
+}
+
+/* ------------Asrto camp------------ */
+
+.astro-camp {
+  top: 320px;
+  width: 100%;
+  height: 520px;
+  background-image: url("	https://dmh6legpso131.cloudfront.net/images/astrocamp/home/astrocamp-red-rocket.svg");
+  background-size: contain;
+  background-color: rgb(212, 215, 220);
+}
+
+.astro-camp-title {
+  width: 420px;
+  color: rgb(229 31 88);
+  font-size: 60px;
+  font-weight: 700;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+.astro-subtitle {
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  color: black;
+}
+
+.astro-content {
+  height: 100%;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgb(82, 82, 91);
+  padding: 50px 0 30px 0;
+  margin: auto;
+  text-align: center;
+}
+
+.learn-more {
+  background-color: rgb(229, 31, 88);
+  line-height: 24px;
+  color: white;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 12px 16px;
+  margin-bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 1px 1px 3px 1px #777;
+}
+
+/* ------------Asrto camp------------ */
+
+.demo-day-title {
+  color: white;
+  position: relative;
+  top: 320px;
+  width: 100%;
+  height: 600px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+
+.damo-day-YT {
+  background-color: rgb(229, 31, 88);
+  position: relative;
+  top: -180px;
+  height: 650px;
+  text-align: center;
+  padding: auto;
+  margin: auto;
+}
+
+.damo-day-YT iframe {
+  width: 1024px;
+  height: 576px;
+}
+/* ------------精選文章------------ */
+
+.articles {
+  top: -150px;
+}
+
+.banner-cards {
+  width: 1200px;
+  flex-wrap: wrap;
+  gap: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.banner-card {
+  width: 45%;
+  height: 180px;
+  background-color: #fff;
+  border: 2px solid white;
+  align-items: center;
+  gap: 2%;
+  box-shadow: 3px 5px 5px 2px gray;
+  border-radius: 10px;
+}
+
+.articles-pic {
+  max-width: 200px;
+  max-height: 120px;
+  border-radius: 10px;
+}
+
+.articles-text {
+  height: 100%;
+  vertical-align: middle;
+  position: relative;
+  top: 45px;
+}
+
+.articles-text h3 {
+  font-size: 140%;
+  border: 0 solid transparent;
+}
+
+.articles-text span,
+.articles-text i {
+  color: black;
+  font-weight: 700;
+}
+
+.articles-times {
+  display: flex;
+  position: relative;
+  bottom: -10%;
+  left: 10px;
+  width: 95%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.articles-more {
+  background-color: rgb(229, 31, 88);
+  line-height: 24px;
+  color: white;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 12px 16px;
+  margin: 40px 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* ------------企業服務------------ */
+
+.bg-image {
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(39, 43, 55);
+  clip-path: polygon(0 25%, 75% 8%, 100% 18%, 100% 80%, 20% 100%, 0 90%);
+}
+
+.services-title {
+  height: 230px;
+}
+.services-title p {
+  position: absolute;
+  color: white;
+  top: 230px;
+}
+
+.services-cards {
+  max-width: 1200px;
+  height: 500px;
+  gap: 30px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.services-card {
+  background-color: #fff;
+  position: relative;
+  top: 100px;
+  width: 45%;
+  height: 450px;
+  flex-wrap: nowrap;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 2px 2px black;
+}
+
+.services-pic {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.services-card h3 {
+  border: 0 solid transparent;
+  position: relative;
+  top: 20px;
+}
+
+.services-card p {
+  color: black;
+  padding: 15px;
+}
+
+.services-card span {
+  color: #ea3434;
+  font-weight: 700;
+  position: relative;
+  top: 0;
+  left: 70%;
+}
+
+/* ------------footer------------ */
+
+.footer {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(39, 43, 55);
+}
+
+.footer-content {
+  width: 100%;
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.connect-right *,
+.connect-left * {
+  width: 40%;
+  color: white;
+}
+
+.connect-right {
+  width: 700px;
+}
+
+.connect-right a {
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-wrap: nowrap;
+}
+
+.connect-rightup,
+.connect-rightdown {
+  width: 100%;
+  height: 25px;
+  align-items: center;
+  text-align: left;
+  margin: 40px;
+}
+
+.connect-rightup {
+  right: 5%;
+}
+
+.connect-rightdown {
+  width: 80%;
+  margin-left: auto;
+  text-align: end;
+}
+
+.connect-left {
+  top: 25px;
+  width: 400px;
+  text-wrap: nowrap;
+}
+
+.connect-left img {
+  position: relative;
+  top: -10px;
+}
+
+.connect-left p {
+  position: relative;
+  left: 10px;
+}
+
+.footer span {
+  width: 100%;
+  font-size: 16px;
+  color: rgb(148, 163, 184);
+  display: block;
+  padding: 5px 0 10px 0;
+  text-align: center;
+  font-weight: 700;
+  background-color: rgb(24, 30, 45);
+}
+
+.copyright {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.connect-us {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 20px;
+  background-color: rgb(255, 0, 0);
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.fixed i {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.top i {
+  font-size: 50px;
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  color: rgb(255, 0, 0);
+}
+
+.top {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  border-radius: 25px;
+  background-color: white;
+  z-index: 1;
+}
+
+@media screen and (width < 1024px) {
+  .html {
+    width: 1023px;
+  }
+  .full-content {
+    width: 100vw;
+  }
+  .content {
+    width: 100%;
+  }
+  .nav-content {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+  .logo-box {
+    width: 10%;
+    justify-content: flex-end;
+  }
+  .nav-list-box {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .icons-box {
+    width: 50px;
+    display: flex;
+    line-height: 60px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .carousel-list {
+    display: none;
+  }
+  .active {
+    width: 100%;
+    display: block;
+  }
+  .picture {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel,
+  .carousel-1,
+  .carousel-2 {
+    background-image: none;
+  }
+
+  .courses-all {
+    position: relative;
+    top: 60px;
+  }
+  .courses-title p {
+    width: 1023px;
+    text-align: center;
+  }
+
+  .online-group,
+  .entity-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .courses-title {
+  }
+  .online-group .courses-card:last-child {
+    position: relative;
+    transform: translate(calc(-50% - 15px));
+  }
+  .entity-group {
+    justify-content: center;
+  }
+  .astro-camp {
+    background-size: cover;
+  }
+  .damo-day-YT iframe {
+    width: 100vw;
+  }
+  .banner-card {
+    width: 50%;
+  }
+  .footer {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-content {
+    height: 500px;
+    flex-wrap: wrap;
+  }
+  .connect-right {
+    width: 100%;
+    display: block;
+  }
+  .connect-rightup,
+  .connect-rightdown {
+    text-align: right;
+  }
+}
+
+@media screen and (width < 768px) {
+  .nav-box-sm {
+    display: block;
+  }
+  body,
+  h1,
+  ul {
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* NavBar */
+  nav {
+    width: 100%;
+    background: #eee;
+    /* box-shadow: 0px 1px 3px #00000088; */
+  }
+  nav::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  nav img {
+    /* Logo */
+    text-align: center;
+    padding-left: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-size: 30px;
+  }
+
+  /* 隱藏 checkbox */
+  input {
+    display: none;
+  }
+
+  /* 漢堡按鈕 */
+  label {
+    float: right;
+    padding-right: 50px;
+    line-height: 50px;
+  }
+
+  label img {
+    width: 30px;
+    vertical-align: middle;
+  }
+
+  input:checked ~ .menu {
+    max-height: 500px;
+  }
+
+  #switch1:checked ~ .menu1 {
+    max-height: 200px;
+  }
+  #switch2:checked ~ .menu2 {
+    max-height: 300px;
+  }
+
+  /* 選單列 */
+  .menu,
+  .menu1,
+  .menu2 {
+    clear: both;
+    background: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .menu li,
+  .menu1 li,
+  .menu2 li {
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+  }
+  .menu a,
+  .menu1 a,
+  .menu2 a {
+    display: block;
+    padding: 10px 10px;
+    font-size: 18px;
+    color: #5d5d5d;
+    text-align: left;
+  }
+  .menu :hover,
+  .menu1 :hover,
+  .menu2 :hover {
+    background: #5d5d5d;
+    color: #fff;
+  }
+
+  .full-content {
+    width: 768px;
+  }
+  .nav-content {
+    display: none;
+  }
+  .nav-list-content {
+    width: 100%;
+  }
+  .nav-list {
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .nav-list li {
+  }
+
+  .nav-list a {
+  }
+
+  .user {
+    display: block;
+    position: relative;
+    top: 293px;
+    left: calc(-690px);
+    padding: 10px;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .user-drop {
+    width: 768px;
+    display: block;
+    position: relative;
+    top: 390px;
+    left: calc(-160px);
+    opacity: 1;
+    background-color: #fff;
+    padding: 60px 0 0 0px;
+    border-top: 1px solid gray;
+  }
+
+  .nav-drop {
+    opacity: 1;
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 0 0 0 10px;
+  }
+
+  .nav-drop button {
+    background-color: #fff;
+    text-align: left;
+  }
+
+  .content {
+    display: block;
+    width: 500px;
+  }
+  .online-group {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+    top: 120px;
+  }
+  .entity-group {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+    top: 120px;
+    transform: translate(-50%);
+  }
+}
