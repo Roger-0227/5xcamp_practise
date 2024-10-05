@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>圖片輪播</title>
+    <link rel="stylesheet" href="輪播.css" />
+    <script src="輪播.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="carousel">
+        <button class="carousel-btn prev-btn">&larr;</button>
+        <div class="container">
+          <ul class="slide-track">
+            <li class="slide"><img src="介紹 1.jpeg" /></li>
+            <li class="slide"><img src="介紹.jpeg" /></li>
+            <li class="slide"><img src="公告.jpeg" /></li>
+            <li class="slide"><img src="大拇指.jpeg" /></li>
+            <li class="slide"><img src="打叉.jpeg" /></li>
+          </ul>
+        </div>
+        <button class="carousel-btn next-btn">&rarr;</button>
+
+        <nav class="navigator">
+          <button data-index="0" class="indicator active"></button>
+          <button data-index="1" class="indicator"></button>
+          <button data-index="2" class="indicator"></button>
+          <button data-index="3" class="indicator"></button>
+          <button data-index="4" class="indicator"></button>
+        </nav>
+      </div>
+    </main>
+  </body>
+</html>

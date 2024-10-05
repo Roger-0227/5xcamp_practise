@@ -1,0 +1,40 @@
+{
+    "folders": [
+        {
+            "name": "專案",
+            "path": "../../專案"
+        },
+        {
+            "name": "09-TODOApp",
+            "path": "."
+        },
+        {
+            "name": "12-圖片輪播",
+            "path": "../12-圖片輪播"
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "09-TODOApp",
+        "auto-close-tag.activationOnLanguage": [
+            "xml",
+            "php",
+            "blade",
+            "ejs",
+            "jinja",
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+            "plaintext",
+            "markdown",
+            "vue",
+            "liquid",
+            "erb",
+            "lang-cfml",
+            "cfml",
+            "HTML (EEx)",
+            "HTML (Eex)",
+            "plist"
+        ]
+    }
+}
