@@ -1,4 +1,4 @@
 # Class exercises
 
-5xcamp_practise
-course
+- 5xcamp_practise
+- course
